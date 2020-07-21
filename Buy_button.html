@@ -1,0 +1,288 @@
+<html>
+  <h1>AMG E53 4matic+ stationwagon</h1>
+  <meta http-equiv="content-type" charset="utf-8">
+
+        <!-- 商品購入画面 -->  
+        <div id='collection-component-1595318561064'></div>
+        <script type="text/javascript">
+        /*<![CDATA[*/
+        (function () {
+          var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+          if (window.ShopifyBuy) {
+            if (window.ShopifyBuy.UI) {
+              ShopifyBuyInit();
+            } else {
+              loadScript();
+            }
+          } else {
+            loadScript();
+          }
+          function loadScript() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = scriptURL;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+            script.onload = ShopifyBuyInit;
+          }
+          function ShopifyBuyInit() {
+            var client = ShopifyBuy.buildClient({
+              domain: 'oshokkaido.myshopify.com',
+              storefrontAccessToken: 'd79efdce59e8075e0077731831d0bade',
+            });
+            ShopifyBuy.UI.onReady(client).then(function (ui) {
+              ui.createComponent('collection', {
+                id: '208194535586',
+                node: document.getElementById('collection-component-1595318561064'),
+                moneyFormat: '%C2%A5%7B%7Bamount_no_decimals%7D%7D',
+                options: {
+          "product": {
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "calc(25% - 20px)",
+                  "margin-left": "20px",
+                  "margin-bottom": "50px",
+                  "width": "calc(25% - 20px)"
+                },
+                "img": {
+                  "height": "calc(100% - 15px)",
+                  "position": "absolute",
+                  "left": "0",
+                  "right": "0",
+                  "top": "0"
+                },
+                "imgWrapper": {
+                  "padding-top": "calc(75% + 15px)",
+                  "position": "relative",
+                  "height": "0"
+                }
+              },
+              "title": {
+                "font-size": "17px",
+                "color": "#000000"
+              },
+              "button": {
+                "font-weight": "bold",
+                "font-size": "17px",
+                "padding-top": "16.5px",
+                "padding-bottom": "16.5px",
+                ":hover": {
+                  "background-color": "#1d7e19"
+                },
+                "background-color": "#208c1c",
+                ":focus": {
+                  "background-color": "#1d7e19"
+                },
+                "border-radius": "40px",
+                "padding-left": "22px",
+                "padding-right": "22px"
+              },
+              "quantityInput": {
+                "font-size": "17px",
+                "padding-top": "16.5px",
+                "padding-bottom": "16.5px"
+              },
+              "price": {
+                "font-size": "17px",
+                "color": "#0a0a0a"
+              },
+              "compareAt": {
+                "font-size": "14.45px",
+                "color": "#0a0a0a"
+              },
+              "unitPrice": {
+                "font-size": "14.45px",
+                "color": "#0a0a0a"
+              }
+            },
+            "text": {
+              "button": "カートに追加"
+            }
+          },
+          "productSet": {
+            "styles": {
+              "products": {
+                "@media (min-width: 601px)": {
+                  "margin-left": "-20px"
+                }
+              }
+            }
+          },
+          "modalProduct": {
+            "contents": {
+              "img": false,
+              "imgWithCarousel": true,
+              "button": false,
+              "buttonWithQuantity": true
+            },
+            "styles": {
+              "product": {
+                "@media (min-width: 601px)": {
+                  "max-width": "100%",
+                  "margin-left": "0px",
+                  "margin-bottom": "0px"
+                }
+              },
+              "button": {
+                "font-weight": "bold",
+                "font-size": "17px",
+                "padding-top": "16.5px",
+                "padding-bottom": "16.5px",
+                ":hover": {
+                  "background-color": "#1d7e19"
+                },
+                "background-color": "#208c1c",
+                ":focus": {
+                  "background-color": "#1d7e19"
+                },
+                "border-radius": "40px",
+                "padding-left": "22px",
+                "padding-right": "22px"
+              },
+              "quantityInput": {
+                "font-size": "17px",
+                "padding-top": "16.5px",
+                "padding-bottom": "16.5px"
+              }
+            },
+            "text": {
+              "button": "Add to cart"
+            }
+          },
+          "cart": {
+            "styles": {
+              "button": {
+                "font-weight": "bold",
+                "font-size": "17px",
+                "padding-top": "16.5px",
+                "padding-bottom": "16.5px",
+                ":hover": {
+                  "background-color": "#1d7e19"
+                },
+                "background-color": "#208c1c",
+                ":focus": {
+                  "background-color": "#1d7e19"
+                },
+                "border-radius": "40px"
+              },
+              "title": {
+                "font-size": "25px",
+                "color": "#000000"
+              },
+              "header": {
+                "color": "#000000"
+              },
+              "lineItems": {
+                "color": "#000000"
+              },
+              "subtotalText": {
+                "font-size": "25px",
+                "color": "#000000"
+              },
+              "subtotal": {
+                "font-size": "25px",
+                "color": "#000000"
+              },
+              "notice": {
+                "font-size": "17px",
+                "color": "#000000"
+              },
+              "currency": {
+                "color": "#000000"
+              },
+              "close": {
+                "color": "#000000",
+                ":hover": {
+                  "color": "#000000"
+                }
+              },
+              "empty": {
+                "color": "#000000"
+              },
+              "noteDescription": {
+                "color": "#000000"
+              },
+              "discountText": {
+                "color": "#000000"
+              },
+              "discountIcon": {
+                "fill": "#000000"
+              },
+              "discountAmount": {
+                "color": "#000000"
+              }
+            },
+            "text": {
+              "title": "カート",
+              "total": "合計 (税込)",
+              "empty": "カートは空です",
+              "notice": "送料は全国一律 ¥300円です。 ",
+              "button": "お支払いへ",
+              "noteDescription": ""
+            },
+            "popup": false
+          },
+          "toggle": {
+            "styles": {
+              "toggle": {
+                "font-weight": "bold",
+                "background-color": "#208c1c",
+                ":hover": {
+                  "background-color": "#1d7e19"
+                },
+                ":focus": {
+                  "background-color": "#1d7e19"
+                }
+              },
+              "count": {
+                "font-size": "17px"
+              }
+            }
+          },
+          "lineItem": {
+            "styles": {
+              "variantTitle": {
+                "color": "#000000"
+              },
+              "title": {
+                "color": "#000000"
+              },
+              "price": {
+                "color": "#000000"
+              },
+              "fullPrice": {
+                "color": "#000000"
+              },
+              "discount": {
+                "color": "#000000"
+              },
+              "discountIcon": {
+                "fill": "#000000"
+              },
+              "quantity": {
+                "color": "#000000"
+              },
+              "quantityIncrement": {
+                "color": "#000000",
+                "border-color": "#000000"
+              },
+              "quantityDecrement": {
+                "color": "#000000",
+                "border-color": "#000000"
+              },
+              "quantityInput": {
+                "color": "#000000",
+                "border-color": "#000000"
+              }
+            }
+          }
+        },
+              });
+            });
+          }
+        })();
+        /*]]>*/
+        </script>
+            <p style="text-align: center;">送料は全国一律 ¥300です。発送までに1週間程度、お時間をいただきます。</p>
+
+</html>
